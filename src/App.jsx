@@ -1,10 +1,13 @@
 import './App.css'
+import Header from './components/Header'
+import Home from './components/Home'
 
 function App() {
 
   return (
     <div>
-      <h2 className='text-red-600 text-3xl'>Hello World</h2>
+      <Header />
+      <Home />
     </div>
   )
 }
