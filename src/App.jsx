@@ -1,18 +1,36 @@
 import './App.css'
-import About from './components/About'
-import Header from './components/Header'
-import Home from './components/Home'
-import Projects from './components/Projects'
+import { useEffect, useState, lazy, Suspense } from 'react'
+import { BallTriangle } from 'react-loader-spinner'
+
+const Packet = lazy(() => import('./components/Packet'));
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
-    <div>
-      <Header />
-      <Home id="Home" />
-      <About id="About" />
-      <Projects id="Projects"/>
-    </div>
+    <>
+
+      <Suspense fallback={<div className='w-[100vw] h-[100vh] flex justify-center items-center'>
+        <BallTriangle
+          height={100}
+          width={100}
+          radius={5}
+          color="#915eff"
+          ariaLabel="ball-triangle-loading"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+        />
+      </div>}>
+        <Packet />
+      </Suspense>
+    </>
   )
 }
 

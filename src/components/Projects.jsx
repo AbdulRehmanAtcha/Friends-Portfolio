@@ -32,7 +32,7 @@ const Projects = () => {
         },
     ]);
     return (
-        <div className='mt-10'>
+        <div className='mt-10' id='Projects'>
             <div className='text-white flex justify-center items-center'>
                 <h1 className='text-3xl'>My Projects</h1>
             </div>

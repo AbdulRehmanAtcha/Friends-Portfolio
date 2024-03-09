@@ -4,7 +4,7 @@ import profile from "../assets/umair-pic.png"
 const About = () => {
   return (
     <div>
-      <div className='flex justify-around items-center flex-col lg:flex-row'>
+      <div className='flex justify-around items-center flex-col lg:flex-row' id='About'>
         <img src={profile} alt="Profile" className='w-[99vw] lg:w-[40%]' />
         <div className='w-[99vw] lg:w-[40%]'>
           <h1 className='text-[#915eff] text-3xl text-center'>About Me</h1>

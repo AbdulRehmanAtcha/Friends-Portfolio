@@ -69,7 +69,7 @@ const Navbar = () => {
                             <Link
                                 to="Projects"
                                 smooth={true}
-                                offset={40}
+                                offset={5}
                                 duration={1300}
                                 onClick={toggleHandler}
                             >
