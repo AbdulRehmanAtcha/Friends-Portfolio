@@ -54,7 +54,7 @@ const Navbar = () => {
                                 <span>02.</span> About
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link
                                 to="Skills"
                                 smooth={true}
@@ -64,7 +64,7 @@ const Navbar = () => {
                             >
                                 <span>03.</span> Skills
                             </Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link
                                 to="Projects"
@@ -73,7 +73,7 @@ const Navbar = () => {
                                 duration={1300}
                                 onClick={toggleHandler}
                             >
-                                <span>04.</span> Projects
+                                <span>03.</span> Projects
                             </Link>
                         </li>
                         <li>
@@ -84,7 +84,7 @@ const Navbar = () => {
                                 duration={1400}
                                 onClick={toggleHandler}
                             >
-                                <span>05.</span> Contact
+                                <span>04.</span> Contact
                             </Link>
                         </li>
                     </ul>

@@ -1,3 +1,6 @@
+/* *{
+  overflow-x: hidden;
+} */
 body{
     background-color: rgb(5, 8, 22);
     overflow-x: hidden;
@@ -15,10 +18,10 @@ nav {
     width: 100vw;
     z-index: 100;
     transition: background 0.2s ease-in-out;
-    margin-top: 10px;
+    /* margin-top: 10px; */
   }
   .active {
-    background-color: #040f20;
+    background-color: rgba(145, 94, 255, 0.596);
   }
   nav h2 {
     color: aliceblue;
@@ -36,7 +39,7 @@ nav {
     text-decoration: none;
     color: #AAA6c3;
     font-size: 18px;
-    transition: color 1s ease;
+    transition: color 0.4s ease;
     font-family: "Roboto Mono", monospace;
   }
   nav ul li a span {
@@ -64,16 +67,17 @@ nav {
       align-items: center;
       justify-content: flex-start;
       position: fixed;
-      top: 73px;
+      top: 51px;
       width: 100vw;
       height: auto;
       background-color: rgb(145, 94, 255);
       padding: 20px 20px;
       row-gap: 15px;
-      border-radius: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
       transition: right 0.7s ease-in-out;
       overflow: hidden;
-    }
+  }
     .hide {
       right: -800px;
     }
@@ -149,3 +153,16 @@ nav {
     }
   }
   
+  .ant-tabs .ant-tabs-tab{
+    color: white;
+    font-size: 30px;
+  }
+  .ant-tabs .ant-tabs-tab:hover{
+    color: #915eff;
+  }
+  .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    color: #915eff;
+  }
+  .ant-tabs-ink-bar {
+    background-color: #915eff !important; /* Change this to the desired color */
+  }
