@@ -42,7 +42,7 @@ const AllProjects = ({ data }) => {
                     const picture = pics[item?.img]
                     return (
 
-                        <div className='w-[100%] border-2 border-red-50 md:w-[70%] lg:w-[30%] 2xl:w-[20%] h-[300px]' key={index}>
+                        <div className='w-[100%] border-2 border-red-50 md:w-[70%] lg:w-[30%] 2xl:w-[20%] h-[450px]' key={index}>
                             <div className='w-[100%] h-[80%] p-3'>
                                 <img src={item?.img} alt="" className='w-[100%] h-[100%]' />
                             </div>
