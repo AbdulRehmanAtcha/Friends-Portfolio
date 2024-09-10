@@ -41,6 +41,10 @@ nav ul li {
   cursor: pointer;
 }
 
+.white{
+  color: white !important;
+}
+
 nav ul li a {
   text-decoration: none;
   color: #AAA6c3;

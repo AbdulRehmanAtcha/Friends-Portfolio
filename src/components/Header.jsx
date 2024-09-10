@@ -39,6 +39,7 @@ const Navbar = () => {
                                 offset={30}
                                 duration={500}
                                 onClick={toggleHandler}
+                                className={navBar ? "white" : ""}
                             >
                                 <span>01.</span>Home
                             </Link>
@@ -50,6 +51,7 @@ const Navbar = () => {
                                 offset={0}
                                 duration={800}
                                 onClick={toggleHandler}
+                                className={navBar ? "white" : ""}
                             >
                                 <span>02.</span> About
                             </Link>
@@ -72,6 +74,7 @@ const Navbar = () => {
                                 offset={5}
                                 duration={1300}
                                 onClick={toggleHandler}
+                                className={navBar ? "white" : ""}
                             >
                                 <span>03.</span> Projects
                             </Link>
@@ -83,6 +86,7 @@ const Navbar = () => {
                                 offset={0}
                                 duration={1400}
                                 onClick={toggleHandler}
+                                className={navBar ? "white" : ""}
                             >
                                 <span>04.</span> Contact
                             </Link>

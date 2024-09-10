@@ -19,7 +19,7 @@ const Home = () => {
         </button>
       </div>
       <div className='w-[100vw] lg:w-1/3 h-96 flex justify-center items-center'>
-        <img src={bitmoji} alt="Animated Picture" className='w-[90%]' />
+        <img src={bitmoji} alt="Animated Picture" className='w-[60%] lg:w-[90%]' />
       </div>
     </div>
   )
